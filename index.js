@@ -28,7 +28,7 @@ axios.get(url).then((res) => {
     console.log("下载开始")
     await Promise.all(
       imgArr.map((url, index) =>
-        download(url, "./img", { filename: imgName[index] })
+        download(url, "./output", { filename: imgName[index] })
       )
     );
     console.log("下载完毕")
